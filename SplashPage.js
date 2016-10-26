@@ -14,7 +14,7 @@ class SplashPage extends Component {
     var navigator = this.props.navigator;
     setTimeout(() => {
       navigator.replace({
-        id: 'MainPage',
+        id: 'LoginPage',
       });
     }, 2000);
   }

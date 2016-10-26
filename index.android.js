@@ -16,6 +16,7 @@ import {
 
 //import SplashScreen from 'react-native-smart-splash-screen';
 var SplashPage = require('./SplashPage');
+var LoginPage = require('./js/components/auth/LoginPage');
 var MainPage = require('./MainPage');
 var SpotYourTrain = require('./js/components/sportyourtrain/SpotYourTrain');
 var LiveStation = require('./js/components/livestation/LiveStation');
@@ -50,6 +51,13 @@ class App extends Component {
       );
     }
   
+    if (routeId === 'LoginPage') {
+      return (
+        <LoginPage
+            navigator={navigator} />
+      );
+    }
+
     if (routeId === 'MainPage') {
       return (
         <MainPage
